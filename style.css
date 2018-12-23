@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	font-family: arial;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #2948ff, #396afc);
+	background: -o-linear-gradient(left, #2948ff, #396afc);
+	background: linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	padding: 20px 40px;
+}
+
+nav ul li{
+	margin-right: 20px;
+	color: #f4f4f6;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.hero{
+	padding-top: 40px;
+	height: 60vh;
+	background-image: url('marvin-meyer-571072-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+
+.main-wrap{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 20px;
+	margin: 50px auto;
+	max-width: 1200px;
+	padding: 0 50px;
+}
+
+.main-wrap .grid-item{
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	transition: all 400ms;
+	cursor: pointer;
+}
+
+.main-wrap .grid-item:hover{
+	transform: rotate(-3deg);
+}
+
+footer p{
+	color: #f4f4f6;
+	text-align: right;
+	padding: 20px 40px;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #2948ff, #396afc);
+	background: -o-linear-gradient(left, #2948ff, #396afc);
+	background: linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
